@@ -66,7 +66,7 @@ namespace XMLWeather
         private void ExtractCurrent()
         {
             // get current information from web and place in an xml file
-            XmlReader reader = XmlReader.Create("http://api.openweathermap.org/data/2.5/weather?q=Stratford,CA&mode=xml&units=metric&appid=3f2e224b815c0ed45524322e145149f0");
+            XmlReader reader = XmlReader.Create("http://api.openweathermap.org/data/2.5/weather?q=Tokyo,JP&mode=xml&units=metric&appid=3f2e224b815c0ed45524322e145149f0");
 
             // find the city element, and add it's name attribute to days[0], (today)
             reader.ReadToFollowing("city");
