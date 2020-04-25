@@ -39,7 +39,10 @@
             this.forecastLabel = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.conditionLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // cityOutput
@@ -48,7 +51,7 @@
             this.cityOutput.BackColor = System.Drawing.Color.Transparent;
             this.cityOutput.Font = new System.Drawing.Font("Microsoft YaHei UI", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cityOutput.ForeColor = System.Drawing.Color.White;
-            this.cityOutput.Location = new System.Drawing.Point(101, 108);
+            this.cityOutput.Location = new System.Drawing.Point(85, 82);
             this.cityOutput.Name = "cityOutput";
             this.cityOutput.Size = new System.Drawing.Size(122, 64);
             this.cityOutput.TabIndex = 22;
@@ -66,10 +69,11 @@
             // maxLabel
             // 
             this.maxLabel.AutoSize = true;
+            this.maxLabel.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.maxLabel.ForeColor = System.Drawing.Color.White;
             this.maxLabel.Location = new System.Drawing.Point(109, 298);
             this.maxLabel.Name = "maxLabel";
-            this.maxLabel.Size = new System.Drawing.Size(26, 13);
+            this.maxLabel.Size = new System.Drawing.Size(42, 21);
             this.maxLabel.TabIndex = 31;
             this.maxLabel.Text = "max";
             // 
@@ -84,10 +88,11 @@
             // minLabel
             // 
             this.minLabel.AutoSize = true;
+            this.minLabel.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.minLabel.ForeColor = System.Drawing.Color.White;
             this.minLabel.Location = new System.Drawing.Point(112, 264);
             this.minLabel.Name = "minLabel";
-            this.minLabel.Size = new System.Drawing.Size(23, 13);
+            this.minLabel.Size = new System.Drawing.Size(39, 21);
             this.minLabel.TabIndex = 29;
             this.minLabel.Text = "min";
             // 
@@ -95,7 +100,7 @@
             // 
             this.currentOutput.BackColor = System.Drawing.Color.Transparent;
             this.currentOutput.ForeColor = System.Drawing.Color.White;
-            this.currentOutput.Location = new System.Drawing.Point(319, 178);
+            this.currentOutput.Location = new System.Drawing.Point(304, 159);
             this.currentOutput.Name = "currentOutput";
             this.currentOutput.Size = new System.Drawing.Size(22, 13);
             this.currentOutput.TabIndex = 28;
@@ -152,16 +157,38 @@
             // 
             this.pictureBox1.Location = new System.Drawing.Point(-3, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(725, 410);
+            this.pictureBox1.Size = new System.Drawing.Size(728, 410);
             this.pictureBox1.TabIndex = 43;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.forecastLabel_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Location = new System.Drawing.Point(489, 54);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(136, 137);
+            this.pictureBox2.TabIndex = 44;
+            this.pictureBox2.TabStop = false;
+            // 
+            // conditionLabel
+            // 
+            this.conditionLabel.AutoSize = true;
+            this.conditionLabel.Font = new System.Drawing.Font("Microsoft YaHei UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.conditionLabel.ForeColor = System.Drawing.Color.White;
+            this.conditionLabel.Location = new System.Drawing.Point(485, 260);
+            this.conditionLabel.Name = "conditionLabel";
+            this.conditionLabel.Size = new System.Drawing.Size(142, 35);
+            this.conditionLabel.TabIndex = 45;
+            this.conditionLabel.Text = "Condition";
+            this.conditionLabel.Click += new System.EventHandler(this.CurrentScreen_Load);
             // 
             // CurrentScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
+            this.Controls.Add(this.conditionLabel);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.forecastLabel);
             this.Controls.Add(this.todayLabel);
             this.Controls.Add(this.cityOutput);
@@ -177,6 +204,7 @@
             this.Size = new System.Drawing.Size(725, 410);
             this.Load += new System.EventHandler(this.CurrentScreen_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -194,5 +222,7 @@
         private System.Windows.Forms.Label forecastLabel;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label conditionLabel;
     }
 }

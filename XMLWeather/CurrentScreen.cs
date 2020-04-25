@@ -24,6 +24,7 @@ namespace XMLWeather
             tempLabel.Text = Form1.days[0].currentTemp + "°C";
             minOutput.Text = Form1.days[0].tempLow + "°C";
             maxOutput.Text = Form1.days[0].tempHigh + "°C";
+            conditionLabel.Text = Form1.days[0].condition;
         }
 
         /// <summary>
