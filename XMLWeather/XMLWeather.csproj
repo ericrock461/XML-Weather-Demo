@@ -100,10 +100,74 @@
     <None Include="Resources\Rain3.gif" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Sunny_Day.jpg" />
+    <None Include="Resources\Sunny_Day.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\PartyCloudyMostlySunny_Day.jpg" />
+    <None Include="Resources\PartyCloudyMostlySunny_Day.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Overcast_Day.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\few_clouds.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\whispy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rainy_Day.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\windy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\snowy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stormy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\snowing_gif.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sun-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\partlyCloudy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\partyCloudy2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clouds-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\broken-clouds.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cloud-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rain-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\haze.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\snow-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thunder-icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -46,9 +46,9 @@
             // forecastLabel
             // 
             this.forecastLabel.BackColor = System.Drawing.Color.Transparent;
-            this.forecastLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.forecastLabel.Font = new System.Drawing.Font("Microsoft YaHei UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.forecastLabel.ForeColor = System.Drawing.Color.White;
-            this.forecastLabel.Location = new System.Drawing.Point(142, 14);
+            this.forecastLabel.Location = new System.Drawing.Point(626, 14);
             this.forecastLabel.Name = "forecastLabel";
             this.forecastLabel.Size = new System.Drawing.Size(82, 28);
             this.forecastLabel.TabIndex = 62;
@@ -57,9 +57,9 @@
             // todayLabel
             // 
             this.todayLabel.BackColor = System.Drawing.Color.Transparent;
-            this.todayLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.todayLabel.Font = new System.Drawing.Font("Microsoft YaHei UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.todayLabel.ForeColor = System.Drawing.Color.White;
-            this.todayLabel.Location = new System.Drawing.Point(22, 14);
+            this.todayLabel.Location = new System.Drawing.Point(526, 14);
             this.todayLabel.Name = "todayLabel";
             this.todayLabel.Size = new System.Drawing.Size(82, 28);
             this.todayLabel.TabIndex = 61;
@@ -106,7 +106,7 @@
             // 
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(129, 24);
+            this.label5.Location = new System.Drawing.Point(607, 26);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(115, 27);
             this.label5.TabIndex = 63;

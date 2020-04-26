@@ -9,6 +9,12 @@ using System.Windows.Forms;
 using System.Net;
 using System.Xml;
 using System.Diagnostics;
+/// <summary>
+/// Erich Rock
+/// 2020-04-25
+/// Weather API; 
+/// Program gets Tokyo weather info and displays it
+/// </summary>
 
 namespace XMLWeather
 {
@@ -53,9 +59,13 @@ namespace XMLWeather
                 d.tempLow = reader.GetAttribute("min");
                 d.tempHigh = reader.GetAttribute("max");
 
-                //find the clouds element, get the value attribute
+                //find the humidity element, get the value attribute
+                reader.ReadToFollowing("humidity");
+                d.humidity = reader.GetAttribute("value");
+
+                //find the clouds element, get its value
                 reader.ReadToFollowing("clouds");
-                d.condition = reader.GetAttribute("value");
+                d.condition = reader.GetAttribute("value");               
 
                 // add day to days list
                 days.Add(d);
