@@ -36,14 +36,16 @@
             this.todayLabel = new System.Windows.Forms.Label();
             this.forecastLabel = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.backdrop = new System.Windows.Forms.PictureBox();
-            this.weatherIconBox = new System.Windows.Forms.PictureBox();
             this.conditionLabel = new System.Windows.Forms.Label();
             this.humidLabel = new System.Windows.Forms.Label();
             this.brandLabel = new System.Windows.Forms.Label();
             this.brandLabel2 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.backdrop)).BeginInit();
+            this.obligatoryJapaneseLabel = new System.Windows.Forms.Label();
+            this.dateLabel = new System.Windows.Forms.Label();
+            this.weatherIconBox = new System.Windows.Forms.PictureBox();
+            this.backdrop = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.weatherIconBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.backdrop)).BeginInit();
             this.SuspendLayout();
             // 
             // cityOutput
@@ -52,7 +54,7 @@
             this.cityOutput.BackColor = System.Drawing.Color.Transparent;
             this.cityOutput.Font = new System.Drawing.Font("Microsoft YaHei UI", 62.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cityOutput.ForeColor = System.Drawing.Color.White;
-            this.cityOutput.Location = new System.Drawing.Point(72, 74);
+            this.cityOutput.Location = new System.Drawing.Point(72, 59);
             this.cityOutput.Name = "cityOutput";
             this.cityOutput.Size = new System.Drawing.Size(200, 109);
             this.cityOutput.TabIndex = 22;
@@ -65,7 +67,7 @@
             this.maxOutput.BackColor = System.Drawing.Color.Transparent;
             this.maxOutput.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.maxOutput.ForeColor = System.Drawing.Color.White;
-            this.maxOutput.Location = new System.Drawing.Point(24, 224);
+            this.maxOutput.Location = new System.Drawing.Point(24, 197);
             this.maxOutput.Name = "maxOutput";
             this.maxOutput.Size = new System.Drawing.Size(51, 25);
             this.maxOutput.TabIndex = 31;
@@ -78,7 +80,7 @@
             this.minOutput.BackColor = System.Drawing.Color.Transparent;
             this.minOutput.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.minOutput.ForeColor = System.Drawing.Color.White;
-            this.minOutput.Location = new System.Drawing.Point(24, 249);
+            this.minOutput.Location = new System.Drawing.Point(24, 222);
             this.minOutput.Name = "minOutput";
             this.minOutput.Size = new System.Drawing.Size(47, 25);
             this.minOutput.TabIndex = 29;
@@ -91,7 +93,7 @@
             this.tempLabel.BackColor = System.Drawing.Color.Transparent;
             this.tempLabel.Font = new System.Drawing.Font("Microsoft YaHei UI", 44.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tempLabel.ForeColor = System.Drawing.Color.White;
-            this.tempLabel.Location = new System.Drawing.Point(94, 207);
+            this.tempLabel.Location = new System.Drawing.Point(94, 182);
             this.tempLabel.Name = "tempLabel";
             this.tempLabel.Size = new System.Drawing.Size(193, 78);
             this.tempLabel.TabIndex = 26;
@@ -134,37 +136,14 @@
             this.label5.Text = "____________________________";
             this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // backdrop
-            // 
-            this.backdrop.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.backdrop.Cursor = System.Windows.Forms.Cursors.Default;
-            this.backdrop.ErrorImage = ((System.Drawing.Image)(resources.GetObject("backdrop.ErrorImage")));
-            this.backdrop.Location = new System.Drawing.Point(-3, 0);
-            this.backdrop.Name = "backdrop";
-            this.backdrop.Size = new System.Drawing.Size(728, 410);
-            this.backdrop.TabIndex = 43;
-            this.backdrop.TabStop = false;
-            this.backdrop.Click += new System.EventHandler(this.forecastLabel_Click);
-            // 
-            // weatherIconBox
-            // 
-            this.weatherIconBox.BackColor = System.Drawing.Color.Transparent;
-            this.weatherIconBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.weatherIconBox.Location = new System.Drawing.Point(469, 92);
-            this.weatherIconBox.Name = "weatherIconBox";
-            this.weatherIconBox.Size = new System.Drawing.Size(140, 140);
-            this.weatherIconBox.TabIndex = 44;
-            this.weatherIconBox.TabStop = false;
-            // 
             // conditionLabel
             // 
-            this.conditionLabel.AutoSize = true;
             this.conditionLabel.BackColor = System.Drawing.Color.Transparent;
             this.conditionLabel.Font = new System.Drawing.Font("Microsoft YaHei UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.conditionLabel.ForeColor = System.Drawing.Color.White;
-            this.conditionLabel.Location = new System.Drawing.Point(416, 239);
+            this.conditionLabel.Location = new System.Drawing.Point(368, 254);
             this.conditionLabel.Name = "conditionLabel";
-            this.conditionLabel.Size = new System.Drawing.Size(154, 38);
+            this.conditionLabel.Size = new System.Drawing.Size(343, 35);
             this.conditionLabel.TabIndex = 45;
             this.conditionLabel.Text = "Condition";
             this.conditionLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -176,7 +155,7 @@
             this.humidLabel.BackColor = System.Drawing.Color.Transparent;
             this.humidLabel.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.humidLabel.ForeColor = System.Drawing.Color.White;
-            this.humidLabel.Location = new System.Drawing.Point(127, 294);
+            this.humidLabel.Location = new System.Drawing.Point(127, 282);
             this.humidLabel.Name = "humidLabel";
             this.humidLabel.Size = new System.Drawing.Size(96, 25);
             this.humidLabel.TabIndex = 46;
@@ -207,11 +186,58 @@
             this.brandLabel2.Text = "24";
             this.brandLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // obligatoryJapaneseLabel
+            // 
+            this.obligatoryJapaneseLabel.BackColor = System.Drawing.Color.Transparent;
+            this.obligatoryJapaneseLabel.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.obligatoryJapaneseLabel.ForeColor = System.Drawing.Color.White;
+            this.obligatoryJapaneseLabel.Location = new System.Drawing.Point(509, 341);
+            this.obligatoryJapaneseLabel.Name = "obligatoryJapaneseLabel";
+            this.obligatoryJapaneseLabel.Size = new System.Drawing.Size(187, 48);
+            this.obligatoryJapaneseLabel.TabIndex = 49;
+            this.obligatoryJapaneseLabel.Text = "今日の天気東京で。\r\nいつも東京の天気だけ。";
+            // 
+            // dateLabel
+            // 
+            this.dateLabel.BackColor = System.Drawing.Color.Transparent;
+            this.dateLabel.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateLabel.ForeColor = System.Drawing.Color.White;
+            this.dateLabel.Location = new System.Drawing.Point(490, 59);
+            this.dateLabel.Name = "dateLabel";
+            this.dateLabel.Size = new System.Drawing.Size(144, 23);
+            this.dateLabel.TabIndex = 50;
+            this.dateLabel.Text = "xxxx-xx-xx";
+            this.dateLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // weatherIconBox
+            // 
+            this.weatherIconBox.BackColor = System.Drawing.Color.Transparent;
+            this.weatherIconBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.weatherIconBox.Location = new System.Drawing.Point(469, 111);
+            this.weatherIconBox.Name = "weatherIconBox";
+            this.weatherIconBox.Size = new System.Drawing.Size(140, 140);
+            this.weatherIconBox.TabIndex = 44;
+            this.weatherIconBox.TabStop = false;
+            // 
+            // backdrop
+            // 
+            this.backdrop.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.backdrop.Cursor = System.Windows.Forms.Cursors.Default;
+            this.backdrop.ErrorImage = ((System.Drawing.Image)(resources.GetObject("backdrop.ErrorImage")));
+            this.backdrop.Location = new System.Drawing.Point(-3, 0);
+            this.backdrop.Name = "backdrop";
+            this.backdrop.Size = new System.Drawing.Size(728, 410);
+            this.backdrop.TabIndex = 43;
+            this.backdrop.TabStop = false;
+            this.backdrop.Click += new System.EventHandler(this.forecastLabel_Click);
+            // 
             // CurrentScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkBlue;
+            this.Controls.Add(this.dateLabel);
+            this.Controls.Add(this.obligatoryJapaneseLabel);
             this.Controls.Add(this.weatherIconBox);
             this.Controls.Add(this.brandLabel2);
             this.Controls.Add(this.brandLabel);
@@ -228,8 +254,8 @@
             this.Name = "CurrentScreen";
             this.Size = new System.Drawing.Size(725, 410);
             this.Load += new System.EventHandler(this.CurrentScreen_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.backdrop)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.weatherIconBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.backdrop)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -249,5 +275,7 @@
         private System.Windows.Forms.Label humidLabel;
         private System.Windows.Forms.Label brandLabel;
         private System.Windows.Forms.Label brandLabel2;
+        private System.Windows.Forms.Label obligatoryJapaneseLabel;
+        private System.Windows.Forms.Label dateLabel;
     }
 }

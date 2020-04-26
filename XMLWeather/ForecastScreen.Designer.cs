@@ -41,6 +41,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.max2 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.humid1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // forecastLabel
@@ -169,11 +170,22 @@
             this.label7.TabIndex = 65;
             this.label7.Text = "Max Temperature";
             // 
+            // humid1
+            // 
+            this.humid1.AutoSize = true;
+            this.humid1.ForeColor = System.Drawing.Color.White;
+            this.humid1.Location = new System.Drawing.Point(316, 174);
+            this.humid1.Name = "humid1";
+            this.humid1.Size = new System.Drawing.Size(35, 13);
+            this.humid1.TabIndex = 70;
+            this.humid1.Text = "label1";
+            // 
             // ForecastScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
+            this.Controls.Add(this.humid1);
             this.Controls.Add(this.date2);
             this.Controls.Add(this.min2);
             this.Controls.Add(this.label4);
@@ -209,5 +221,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label max2;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label humid1;
     }
 }

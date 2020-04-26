@@ -50,20 +50,25 @@ namespace XMLWeather
                 // create blank day object
                 Day d = new Day();
 
+
+                // find the location element, and get the name attribute
+                reader.ReadToFollowing("location");
+                d.location = reader.GetAttribute("name");
+                
                 // find the time element, and get the day attribute
                 reader.ReadToFollowing("time");
-                d.date = reader.GetAttribute("day");
+                d.date = reader.GetAttribute("day");              
 
-                //find the temperature element, and get the min and max attributes
+                // find the temperature element, and get the min and max attributes
                 reader.ReadToFollowing("temperature");
                 d.tempLow = reader.GetAttribute("min");
                 d.tempHigh = reader.GetAttribute("max");
 
-                //find the humidity element, get the value attribute
+                // find the humidity element, get its value attribute
                 reader.ReadToFollowing("humidity");
                 d.humidity = reader.GetAttribute("value");
 
-                //find the clouds element, get its value
+                // find the clouds element, get the value attribute
                 reader.ReadToFollowing("clouds");
                 d.condition = reader.GetAttribute("value");               
 
@@ -88,7 +93,7 @@ namespace XMLWeather
 
             // find the temperature element and add the value attribute, (current temp), to days[0], (today)
             reader.ReadToFollowing("temperature");
-            days[0].currentTemp = reader.GetAttribute("value");
+            days[0].currentTemp = reader.GetAttribute("value");               
         }
     }
 }
