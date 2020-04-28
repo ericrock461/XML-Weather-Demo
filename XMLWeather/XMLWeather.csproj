@@ -143,9 +143,6 @@
     <None Include="Resources\partyCloudy2.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\clouds-icon.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\broken-clouds.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -168,6 +165,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\pattern2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clouds-icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -40,10 +40,9 @@ namespace XMLWeather
             //cityOutput.Text = Form1.days[0].location;
             cityOutput.Text = "Tokyo"; //since this is "Tokyo24" after all
 
-            //tempLabel.Text = Form1.days[0].currentTemp.ToString("##") + "°C";
-            tempLabel.Text = Form1.days[0].currentTemp + "°C";
-            minOutput.Text = Form1.days[0].tempLow + "°";
-            maxOutput.Text = Form1.days[0].tempHigh + "°";
+            tempLabel.Text = Convert.ToDouble(Form1.days[0].currentTemp).ToString("##") + "°C";
+            minOutput.Text = Convert.ToDouble(Form1.days[0].tempLow).ToString("##") + "°";
+            maxOutput.Text = Convert.ToDouble(Form1.days[0].tempHigh).ToString("##") + "°";
             humidLabel.Text = "Humidity: " + Form1.days[0].humidity + "%";
             conditionLabel.Text = Form1.days[0].condition;
 
@@ -103,7 +102,6 @@ namespace XMLWeather
             {
                 backdrop.BackgroundImage = null;
             }
-
 
             // change weather icon based on current weather conditions
             if (conditionLabel.Text == "Clear") 

@@ -54,7 +54,7 @@
             this.cityOutput.BackColor = System.Drawing.Color.Transparent;
             this.cityOutput.Font = new System.Drawing.Font("Microsoft YaHei UI", 62.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cityOutput.ForeColor = System.Drawing.Color.White;
-            this.cityOutput.Location = new System.Drawing.Point(76, 26);
+            this.cityOutput.Location = new System.Drawing.Point(62, 59);
             this.cityOutput.Name = "cityOutput";
             this.cityOutput.Size = new System.Drawing.Size(210, 111);
             this.cityOutput.TabIndex = 22;
@@ -66,11 +66,11 @@
             // 
             this.maxOutput.AutoSize = true;
             this.maxOutput.BackColor = System.Drawing.Color.Transparent;
-            this.maxOutput.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.maxOutput.Font = new System.Drawing.Font("Microsoft YaHei UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.maxOutput.ForeColor = System.Drawing.Color.White;
-            this.maxOutput.Location = new System.Drawing.Point(24, 197);
+            this.maxOutput.Location = new System.Drawing.Point(56, 195);
             this.maxOutput.Name = "maxOutput";
-            this.maxOutput.Size = new System.Drawing.Size(51, 25);
+            this.maxOutput.Size = new System.Drawing.Size(55, 28);
             this.maxOutput.TabIndex = 31;
             this.maxOutput.Text = "max";
             this.maxOutput.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -79,11 +79,11 @@
             // 
             this.minOutput.AutoSize = true;
             this.minOutput.BackColor = System.Drawing.Color.Transparent;
-            this.minOutput.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.minOutput.Font = new System.Drawing.Font("Microsoft YaHei UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.minOutput.ForeColor = System.Drawing.Color.White;
-            this.minOutput.Location = new System.Drawing.Point(24, 222);
+            this.minOutput.Location = new System.Drawing.Point(56, 224);
             this.minOutput.Name = "minOutput";
-            this.minOutput.Size = new System.Drawing.Size(47, 25);
+            this.minOutput.Size = new System.Drawing.Size(51, 28);
             this.minOutput.TabIndex = 29;
             this.minOutput.Text = "min";
             this.minOutput.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -92,11 +92,11 @@
             // 
             this.tempLabel.AutoSize = true;
             this.tempLabel.BackColor = System.Drawing.Color.Transparent;
-            this.tempLabel.Font = new System.Drawing.Font("Microsoft YaHei UI", 44.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tempLabel.Font = new System.Drawing.Font("Microsoft YaHei UI", 54F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tempLabel.ForeColor = System.Drawing.Color.White;
-            this.tempLabel.Location = new System.Drawing.Point(94, 182);
+            this.tempLabel.Location = new System.Drawing.Point(104, 170);
             this.tempLabel.Name = "tempLabel";
-            this.tempLabel.Size = new System.Drawing.Size(201, 78);
+            this.tempLabel.Size = new System.Drawing.Size(246, 96);
             this.tempLabel.TabIndex = 26;
             this.tempLabel.Text = "Temp";
             this.tempLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -122,7 +122,7 @@
             this.forecastLabel.Name = "forecastLabel";
             this.forecastLabel.Size = new System.Drawing.Size(82, 28);
             this.forecastLabel.TabIndex = 41;
-            this.forecastLabel.Text = "7 Day";
+            this.forecastLabel.Text = "6 Day";
             this.forecastLabel.Click += new System.EventHandler(this.forecastLabel_Click);
             // 
             // label5
@@ -192,7 +192,7 @@
             this.obligatoryJapaneseLabel.BackColor = System.Drawing.Color.Transparent;
             this.obligatoryJapaneseLabel.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.obligatoryJapaneseLabel.ForeColor = System.Drawing.Color.White;
-            this.obligatoryJapaneseLabel.Location = new System.Drawing.Point(509, 341);
+            this.obligatoryJapaneseLabel.Location = new System.Drawing.Point(392, 344);
             this.obligatoryJapaneseLabel.Name = "obligatoryJapaneseLabel";
             this.obligatoryJapaneseLabel.Size = new System.Drawing.Size(187, 48);
             this.obligatoryJapaneseLabel.TabIndex = 49;
@@ -203,7 +203,7 @@
             this.dateLabel.BackColor = System.Drawing.Color.Transparent;
             this.dateLabel.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateLabel.ForeColor = System.Drawing.Color.White;
-            this.dateLabel.Location = new System.Drawing.Point(490, 59);
+            this.dateLabel.Location = new System.Drawing.Point(494, 59);
             this.dateLabel.Name = "dateLabel";
             this.dateLabel.Size = new System.Drawing.Size(144, 23);
             this.dateLabel.TabIndex = 50;
