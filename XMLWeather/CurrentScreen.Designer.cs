@@ -52,14 +52,15 @@
             // 
             this.cityOutput.AutoSize = true;
             this.cityOutput.BackColor = System.Drawing.Color.Transparent;
-            this.cityOutput.Font = new System.Drawing.Font("Microsoft YaHei UI", 62.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cityOutput.Font = new System.Drawing.Font("Microsoft YaHei UI", 62.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cityOutput.ForeColor = System.Drawing.Color.White;
-            this.cityOutput.Location = new System.Drawing.Point(72, 59);
+            this.cityOutput.Location = new System.Drawing.Point(76, 26);
             this.cityOutput.Name = "cityOutput";
-            this.cityOutput.Size = new System.Drawing.Size(200, 109);
+            this.cityOutput.Size = new System.Drawing.Size(210, 111);
             this.cityOutput.TabIndex = 22;
             this.cityOutput.Text = "City";
             this.cityOutput.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.cityOutput.Click += new System.EventHandler(this.forecastLabel_Click);
             // 
             // maxOutput
             // 
@@ -91,11 +92,11 @@
             // 
             this.tempLabel.AutoSize = true;
             this.tempLabel.BackColor = System.Drawing.Color.Transparent;
-            this.tempLabel.Font = new System.Drawing.Font("Microsoft YaHei UI", 44.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tempLabel.Font = new System.Drawing.Font("Microsoft YaHei UI", 44.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tempLabel.ForeColor = System.Drawing.Color.White;
             this.tempLabel.Location = new System.Drawing.Point(94, 182);
             this.tempLabel.Name = "tempLabel";
-            this.tempLabel.Size = new System.Drawing.Size(193, 78);
+            this.tempLabel.Size = new System.Drawing.Size(201, 78);
             this.tempLabel.TabIndex = 26;
             this.tempLabel.Text = "Temp";
             this.tempLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -129,7 +130,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(508, 26);
+            this.label5.Location = new System.Drawing.Point(509, 26);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(115, 27);
             this.label5.TabIndex = 42;
@@ -139,7 +140,7 @@
             // conditionLabel
             // 
             this.conditionLabel.BackColor = System.Drawing.Color.Transparent;
-            this.conditionLabel.Font = new System.Drawing.Font("Microsoft YaHei UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.conditionLabel.Font = new System.Drawing.Font("Microsoft YaHei UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.conditionLabel.ForeColor = System.Drawing.Color.White;
             this.conditionLabel.Location = new System.Drawing.Point(368, 254);
             this.conditionLabel.Name = "conditionLabel";
@@ -153,11 +154,11 @@
             // 
             this.humidLabel.AutoSize = true;
             this.humidLabel.BackColor = System.Drawing.Color.Transparent;
-            this.humidLabel.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.humidLabel.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.humidLabel.ForeColor = System.Drawing.Color.White;
             this.humidLabel.Location = new System.Drawing.Point(127, 282);
             this.humidLabel.Name = "humidLabel";
-            this.humidLabel.Size = new System.Drawing.Size(96, 25);
+            this.humidLabel.Size = new System.Drawing.Size(103, 26);
             this.humidLabel.TabIndex = 46;
             this.humidLabel.Text = "Humidity";
             this.humidLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -245,11 +246,11 @@
             this.Controls.Add(this.conditionLabel);
             this.Controls.Add(this.forecastLabel);
             this.Controls.Add(this.todayLabel);
-            this.Controls.Add(this.cityOutput);
             this.Controls.Add(this.maxOutput);
             this.Controls.Add(this.minOutput);
             this.Controls.Add(this.tempLabel);
             this.Controls.Add(this.label5);
+            this.Controls.Add(this.cityOutput);
             this.Controls.Add(this.backdrop);
             this.Name = "CurrentScreen";
             this.Size = new System.Drawing.Size(725, 410);

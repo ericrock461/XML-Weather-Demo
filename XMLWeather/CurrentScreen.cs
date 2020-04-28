@@ -29,14 +29,18 @@ namespace XMLWeather
             maxOutput.Parent = backdrop;
             humidLabel.Parent = backdrop;
             conditionLabel.Parent = backdrop;
-            obligatoryJapaneseLabel.Parent = backdrop;
+            obligatoryJapaneseLabel.Parent = backdrop;           
         }
 
         public void DisplayCurrent()
         {
             // the current information is in index 0, thus why all information is retreived from there
             dateLabel.Text = Form1.days[0].date;
-            cityOutput.Text = Form1.days[0].location;
+
+            //cityOutput.Text = Form1.days[0].location;
+            cityOutput.Text = "Tokyo"; //since this is "Tokyo24" after all
+
+            //tempLabel.Text = Form1.days[0].currentTemp.ToString("##") + "°C";
             tempLabel.Text = Form1.days[0].currentTemp + "°C";
             minOutput.Text = Form1.days[0].tempLow + "°";
             maxOutput.Text = Form1.days[0].tempHigh + "°";

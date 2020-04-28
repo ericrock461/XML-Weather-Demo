@@ -15,6 +15,13 @@ namespace XMLWeather
         {
             InitializeComponent();
             displayForecast();
+
+            // set the backdrop
+            backgroundBox.BackgroundImage = Properties.Resources.pattern2;
+
+            todayLabel.Parent = backgroundBox;
+            forecastLabel.Parent = backgroundBox;
+            label5.Parent = backgroundBox;
         }
 
         /// <summary>
@@ -23,14 +30,30 @@ namespace XMLWeather
         /// </summary>
         public void displayForecast()
         {
-            date1.Text = Form1.days[1].date;
+            day1.Text = Form1.days[1].date;
+           //day1.Text = Convert.ToDateTime(Form1.days[1].date.Attributes["value"].Value).ToString("ddd");
             min1.Text = Form1.days[1].tempLow;
             max1.Text = Form1.days[1].tempHigh;
-            humid1.Text = Form1.days[1].humidity;
 
-            date2.Text = Form1.days[2].date;
+            day2.Text = Form1.days[2].date;
             min2.Text = Form1.days[2].tempLow;
             max2.Text = Form1.days[2].tempHigh;
+
+            day3.Text = Form1.days[3].date;
+            min3.Text = Form1.days[3].tempLow;
+            max3.Text = Form1.days[3].tempHigh;
+
+            day4.Text = Form1.days[4].date;
+            min4.Text = Form1.days[4].tempLow;
+            max4.Text = Form1.days[4].tempHigh;
+
+            day5.Text = Form1.days[5].date;
+            min5.Text = Form1.days[5].tempLow;
+            max5.Text = Form1.days[5].tempHigh;
+
+            day6.Text = Form1.days[6].date;
+            min6.Text = Form1.days[6].tempLow;
+            max6.Text = Form1.days[6].tempHigh;
 
             //date3.Text 
         }
